@@ -48,7 +48,7 @@ module GmailContacts
     # default options for #authentication_url
     def self.authentication_url_options
       @authentication_url_options ||= {
-        :scope => "https://#{DOMAIN}#{FeedsPath}",
+        :scope => "http://#{DOMAIN}#{FeedsPath}",
         :secure => false,
         :session => false
       }
